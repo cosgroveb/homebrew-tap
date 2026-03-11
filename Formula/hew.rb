@@ -9,11 +9,21 @@ class Hew < Formula
 
   def install
     ldflags = "-s -w -X main.version=#{version}"
-    system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/hew/"
+
+    # Plain CLI (stdlib only)
+    system "go", "build", *std_go_args(output: bin/"hu", ldflags: ldflags), "./cmd/hu/"
+
+    # TUI (charm deps, own go.mod)
+    Dir.chdir("cmd/hew") do
+      system "go", "build", *std_go_args(output: bin/"hew", ldflags: ldflags), "."
+    end
+
     man1.install "doc/hew.1"
+    man1.install "doc/hu.1"
   end
 
   test do
+    assert_match version.to_s, shell_output("#{bin}/hu --version")
     assert_match version.to_s, shell_output("#{bin}/hew --version")
   end
 end

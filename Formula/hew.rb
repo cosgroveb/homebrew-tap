@@ -1,8 +1,8 @@
 class Hew < Formula
   desc "Minimal coding agent"
   homepage "https://github.com/cosgroveb/hew"
-  url "https://github.com/cosgroveb/hew/archive/refs/tags/v0.5.4.tar.gz"
-  sha256 "2c862bba34b2114f408ba4fe8143cb4747e24de58ab1b652f346f067d9bbb2b6"
+  url "https://github.com/cosgroveb/hew/archive/refs/tags/v0.5.5.tar.gz"
+  sha256 "e5719c5c4d5c0ca0a6fbc055bcb0d69a1dcdb43bb34919e9c067cbab830b441f"
   license "Apache-2.0"
 
   depends_on "go" => :build

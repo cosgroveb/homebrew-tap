@@ -5,13 +5,13 @@ class DrCharm < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cosgroveb/dr-charm/releases/download/v0.2.5/dr-charm_0.2.5_darwin_arm64.tar.gz"
-      sha256 "f6253dc3d8d78ae2061cd883b29f26326194d61b1464fe63c082f045ab7a4864"
+      url "https://github.com/cosgroveb/dr-charm/releases/download/v0.2.6/dr-charm_0.2.6_darwin_arm64.tar.gz"
+      sha256 "d2f4d3f1c45abc89bd484640101f8275222ccf4d6703c03b9b81b73ae229df99"
     end
 
     on_intel do
-      url "https://github.com/cosgroveb/dr-charm/releases/download/v0.2.5/dr-charm_0.2.5_darwin_amd64.tar.gz"
-      sha256 "5098e569d2cfbfd30e9b87720c34110f0e889c897d163b5557ab518341ea9309"
+      url "https://github.com/cosgroveb/dr-charm/releases/download/v0.2.6/dr-charm_0.2.6_darwin_amd64.tar.gz"
+      sha256 "d47e8b8501fe552b1f5daa92297059f5e9819923d145398ea11a227368047a20"
     end
   end
 

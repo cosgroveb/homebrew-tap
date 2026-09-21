@@ -7,13 +7,13 @@ class Al < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cosgroveb/al/releases/download/v0.1.0/al_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1d47e4ccad51bcbbf4af881b839f34d8c1d4b756b0b7c959099b894c97c708cf"
+      url "https://github.com/cosgroveb/al/releases/download/v0.1.1/al_0.1.1_darwin_arm64.tar.gz"
+      sha256 "b0303c81fea8d02066443ed37b5c74edb93c4dd4530df35fb5dc91fb5f9bb8c0"
     end
 
     on_intel do
-      url "https://github.com/cosgroveb/al/releases/download/v0.1.0/al_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0682be1fe685eda049fb5f93cef5088002e4daca84878e51c09d701f2f95008e"
+      url "https://github.com/cosgroveb/al/releases/download/v0.1.1/al_0.1.1_darwin_amd64.tar.gz"
+      sha256 "a45ef732e2b05b40188af3e856ebc376e531d839555a2b9a10d8a734661dd338"
     end
   end
 

@@ -7,20 +7,20 @@ class Al < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cosgroveb/al/releases/download/v0.1.3/al_0.1.3_darwin_arm64.tar.gz"
-      sha256 "4a7b926ea9427320ea255323ba53fad729862ba7fd5f6dd3ba6787865da9c129"
+      url "https://github.com/cosgroveb/al/releases/download/v0.1.4/al_0.1.4_darwin_arm64.tar.gz"
+      sha256 "ef8054decec4357396c302767bccc33283e1f4500d288ffec2c9403bcc3e270a"
     end
 
     on_intel do
-      url "https://github.com/cosgroveb/al/releases/download/v0.1.3/al_0.1.3_darwin_amd64.tar.gz"
-      sha256 "8a41d315704fd13f9c342e03757950c3393344253a2405d1b3ebf4b14a9601dd"
+      url "https://github.com/cosgroveb/al/releases/download/v0.1.4/al_0.1.4_darwin_amd64.tar.gz"
+      sha256 "7bc6b2e5b33c41f8f45fecf8bb16ee14e3f66a05c97aede57d6bc6f3ef772219"
     end
   end
 
   def install
     bin.install "al"
     man1.install "man/man1/al.1"
-    doc.install "LICENSE", "README.md", "docs", "THIRD_PARTY_NOTICES.md", "third-party-licenses"
+    doc.install "LICENSE", "README.md", "docs", "third-party-licenses"
   end
 
   test do

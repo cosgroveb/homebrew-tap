@@ -1,6 +1,6 @@
 cask "autarky" do
-  version "0.1.4"
-  sha256 "dd5730552c749e749c435f1e8eb54587eb7d0351e928ad4b6611a84ff1fde817"
+  version "0.1.5"
+  sha256 "c716954b3ae4bab04d8c119e4ec30a113010ed3556b6153cdcc9306287bf0039"
 
   url "https://downloads.writeaheadblogg.ing/autarky/v#{version}/Autarky-#{version}-arm64.dmg"
   name "Autarky"

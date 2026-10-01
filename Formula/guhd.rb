@@ -9,13 +9,13 @@ class Guhd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cosgroveb/guhd/releases/download/v0.1.1/guhd_0.1.1_darwin_arm64.tar.gz"
-      sha256 "d8c07ed59ec44f656920704da930154e58befa0145c7c6487de7c6b5057e20d2"
+      url "https://github.com/cosgroveb/guhd/releases/download/v0.1.2/guhd_0.1.2_darwin_arm64.tar.gz"
+      sha256 "bf31308800185cbceb63c260182352da7f75192b541a5a7bf41e6c492cbaac7f"
     end
 
     on_intel do
-      url "https://github.com/cosgroveb/guhd/releases/download/v0.1.1/guhd_0.1.1_darwin_amd64.tar.gz"
-      sha256 "79334014d212a8adc593b67ad443fdbc67085398141650699139ea124dd83aba"
+      url "https://github.com/cosgroveb/guhd/releases/download/v0.1.2/guhd_0.1.2_darwin_amd64.tar.gz"
+      sha256 "97cd8b50b6cf356f26581285c5cb7ee99ea54417cf99257b5e5946217f0640ff"
     end
   end
 

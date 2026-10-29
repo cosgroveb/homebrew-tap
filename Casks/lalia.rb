@@ -1,6 +1,6 @@
 cask "lalia" do
-  version "0.3.1"
-  sha256 "3902d4f893a54d92e016bf6c09d863e02a6e2b662acc3a298aab15a89c835ec1"
+  version "0.3.2"
+  sha256 "1814d1d1026d7a369d1db58f0e80017a2cad74f4586c3ebad280d7d5b46ef6dc"
 
   url "https://github.com/cosgroveb/lalia/releases/download/v#{version}/Lalia-#{version}.dmg"
   name "Lalia"

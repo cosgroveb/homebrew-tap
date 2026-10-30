@@ -1,6 +1,6 @@
 cask "lalia" do
-  version "0.3.2"
-  sha256 "1814d1d1026d7a369d1db58f0e80017a2cad74f4586c3ebad280d7d5b46ef6dc"
+  version "0.3.3"
+  sha256 "3123ea01d68cc7bca8ebe6da5d04b0496348027e3bdcd55ceeebf8eb8df58e25"
 
   url "https://github.com/cosgroveb/lalia/releases/download/v#{version}/Lalia-#{version}.dmg"
   name "Lalia"
@@ -13,6 +13,7 @@ cask "lalia" do
   end
 
   depends_on arch: :arm64
+  depends_on formula: "cosgroveb/tap/lalia-runtime"
   depends_on macos: :tahoe
 
   app "Lalia.app"

@@ -1,9 +1,9 @@
 class LaliaRuntime < Formula
   desc "Private local transcription runtime for Lalia"
   homepage "https://github.com/cosgroveb/lalia"
-  url "https://github.com/cosgroveb/lalia/archive/refs/tags/v0.3.8.tar.gz"
-  version "0.3.8"
-  sha256 "abc1bf9baa1a28cc23d6b69dc5c5e80baba06dd308ce9d1ee23e6a06646cae68"
+  url "https://github.com/cosgroveb/lalia/archive/refs/tags/v0.3.9.tar.gz"
+  version "0.3.9"
+  sha256 "09ca6c697fada8ba90239287f4426c9fa60e64cd21fb22554105d95ce79bcb8c"
   depends_on "cmake" => :build
   depends_on "rust" => :build
   depends_on arch: :arm64
@@ -92,6 +92,7 @@ class LaliaRuntime < Formula
            "--backup-dir", buildpath/"runtime-patch-backup"
     cp buildpath/"Support/runtime/lalia_runtime.py", libexec/"lalia_runtime.py"
     cp buildpath/"Support/runtime/patch-audio-usage.py", libexec/"patch-audio-usage.py"
+    cp buildpath/"Support/runtime/transcription_control.py", libexec/"transcription_control.py"
     (bin/"lalia-runtime").write <<~SH
       #!/bin/bash
       exec "#{libexec}/bin/python" "#{libexec}/lalia_runtime.py" "$@"

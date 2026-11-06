@@ -1,9 +1,9 @@
 class LaliaRuntime < Formula
   desc "Private local transcription runtime for Lalia"
   homepage "https://github.com/cosgroveb/lalia"
-  url "https://github.com/cosgroveb/lalia/archive/refs/tags/v0.3.10.tar.gz"
-  version "0.3.10"
-  sha256 "67ff15c6994607b9e68824936a32d39ce219cc983beeafe6c2659988b61acab7"
+  url "https://github.com/cosgroveb/lalia/archive/refs/tags/v0.3.11.tar.gz"
+  version "0.3.11"
+  sha256 "923d86c4ce185f52d383b230cb81b42e4ed510dbd0cb8a757e99a5f43abea3ab"
   depends_on "cmake" => :build
   depends_on "rust" => :build
   depends_on arch: :arm64
